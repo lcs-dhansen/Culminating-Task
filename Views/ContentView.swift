@@ -23,6 +23,17 @@ struct ContentView: View {
             } else {
                 ZStack {
                     
+                    Image("Image1")
+                        .resizable()
+                        .scaledToFit()
+                        .rotationEffect(Angle(degrees: 90))
+                        .frame(width: 600, height: 600)
+                    
+                    RoundedRectangle(cornerRadius: 30)
+                        .fill(Color.black)
+                        .frame(width: 110, height: 70)
+                    
+                    
                     RoundedRectangle(cornerRadius: 25)
                         .fill(Color.red)
                         .frame(width: 100, height: 60)
@@ -33,8 +44,7 @@ struct ContentView: View {
                             .foregroundColor(Color.black)
                     }
                     
-                    
-                    
+                   
                 }
             }
         }
