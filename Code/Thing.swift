@@ -12,13 +12,14 @@ import Foundation
 //structure definition
     struct Thing: Identifiable {
         
-    let id = UUID()
-    let hint: String
-    let title: String
-    let summary: String
-    let segments: [Segment]
         
-}
+        let id = UUID()
+        let hint: String
+        let title: String
+        let summary: String
+     //   let transfer: String
+        
+    }
 
 // populate the model
 //make an array of thing instances
@@ -27,33 +28,21 @@ let boomerMemorial = [
     
     Thing(hint: "",
           title: "Schedule",
-          summary: "Schedule Your Day",
-          segments: [
-            Segment(image: "",
-                    text: """
-                    Schedule
-                """),
-          ]),
+          summary: "Schedule Your Day"
+      //    transfer: "Motivation"
+          ),
     
     Thing(hint: "",
           title: "Goals",
-          summary: "Set your Goals",
-          segments: [
-            Segment(image: "",
-                    text: """
-                    What are your goals
-                """),
-          ]),
+          summary: "Set your Goals"
+     //     transfer: "Goals"
+          ),
     
     Thing(hint: "",
           title: "Boomer3",
-          summary: "Boomer in the garage with us",
-          segments: [
-            Segment(image: "Boomer3",
-                    text: """
-                    Boomer loved to stay near us at all times regardless of where we were.
-                """),
-          ]),
+          summary: "Boomer in the garage with us"
+        //  transfer: "Schedule"
+          ),
     
 //    Thing(hint: "🦮",
 //          title: "Boomer4",

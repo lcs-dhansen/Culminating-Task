@@ -20,7 +20,7 @@ struct MainScreen: View {
         
             List(boomerMemorial) { thing in
 
-                NavigationLink(destination: ThingDetail(someThing: thing)) {
+                NavigationLink(destination: Thing(someThing: Thing)) {
                     
                     ListItem(someThing: thing)
                     
