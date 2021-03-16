@@ -17,18 +17,27 @@ struct MainScreen: View {
     var body: some View {
         
         NavigationView {
-        
-            List(boomerMemorial) { thing in
+            
+            ZStack{
+                Image("Image2")
+                    .resizable()
+                    .scaledToFit()
+                    .rotationEffect(Angle(degrees: 90))
+                    .frame(width: 800, height: 800)
+            
+                List{
 
-                NavigationLink(destination: Thing(someThing: Thing)) {
+                    NavigationLink("Earn Points", destination: earnPoints())
+                        
+                    NavigationLink("Add Goals", destination: addGoals())
                     
-                    ListItem(someThing: thing)
-                    
+                    NavigationLink("Home Screen", destination: HomeScreen())
+                        
                 }
-                
-
+                .frame(width: 300, height: 700)
             }
-           .navigationTitle("Boomer Memorial")
+            
+           .navigationTitle("Main Screen")
             
         }
     }
