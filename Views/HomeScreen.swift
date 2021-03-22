@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    
+    
+    
     var body: some View {
-        Text("hhh")
+        Text("\(score)/100")
     }
 }
 

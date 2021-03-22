@@ -10,11 +10,13 @@ import SwiftUI
 
 struct MainScreen: View {
     
+    
     // create a copy of the data that we created in Thing.swift
     // A "store" in developer speak is just "a place that we keep data"
   //  var store = boomerMemorial
     @ObservedObject var store: TaskStore
     @Binding var showing: Bool
+   
     
     var body: some View {
         

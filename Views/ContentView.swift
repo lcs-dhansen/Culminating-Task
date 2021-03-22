@@ -10,9 +10,11 @@ import SwiftUI
 struct ContentView: View {
     
     
+    
     @State var GoToMainScreen:Bool = false
     @ObservedObject var store: TaskStore
     @Binding var showing: Bool
+    
     
     
     var body: some View {
