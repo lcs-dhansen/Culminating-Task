@@ -12,7 +12,9 @@ struct MainScreen: View {
     
     // create a copy of the data that we created in Thing.swift
     // A "store" in developer speak is just "a place that we keep data"
-    var store = boomerMemorial
+  //  var store = boomerMemorial
+    @ObservedObject var store: TaskStore
+    @Binding var showing: Bool
     
     var body: some View {
         
@@ -23,13 +25,13 @@ struct MainScreen: View {
                     .resizable()
                     .scaledToFit()
                     .rotationEffect(Angle(degrees: 90))
-                    .frame(width: 800, height: 800)
+                    .frame(width: 950, height: 950)
             
                 List{
 
-                    NavigationLink("Earn Points", destination: earnPoints())
+                    NavigationLink("Goals", destination: EarnPoints(store: testStore))
                         
-                    NavigationLink("Add Goals", destination: addGoals())
+//                    NavigationLink("Add Goals", destination: AddTask(store: testStore, showing: .constant(true)))
                     
                     NavigationLink("Home Screen", destination: HomeScreen())
                         
@@ -45,7 +47,7 @@ struct MainScreen: View {
 }
     struct MainScreen_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView()
+            ContentView(store: testStore, showing: .constant(true))
         }
     }
 

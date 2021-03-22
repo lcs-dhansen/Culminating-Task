@@ -11,12 +11,14 @@ struct ContentView: View {
     
     
     @State var GoToMainScreen:Bool = false
+    @ObservedObject var store: TaskStore
+    @Binding var showing: Bool
     
     
     var body: some View {
         ZStack {
             if (GoToMainScreen) {
-                MainScreen()
+                MainScreen(store: testStore, showing: .constant(true))
                 //What should I do if I created another swiftui view under the name View2?
                 //Just calling View2() like that causes lag as described in the linked question before it was deleted, if from view2 I switch back to view1 and so on.
                 //If I directly put the code of View2 here, then adding other views would get too messy.
@@ -27,7 +29,7 @@ struct ContentView: View {
                         .resizable()
                         .scaledToFit()
                         .rotationEffect(Angle(degrees: 90))
-                        .frame(width: 600, height: 600)
+                        .frame(width: 900, height: 900)
                     
                     RoundedRectangle(cornerRadius: 30)
                         .fill(Color.black)
@@ -54,7 +56,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(store: testStore, showing: .constant(true))
     }
 }
 
