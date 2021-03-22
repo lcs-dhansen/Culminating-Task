@@ -10,7 +10,7 @@ import SwiftUI
 struct TaskCell: View {
     
     var points = 0
-  //  var taskCompleted = true
+    var taskCompleted = false
     
     @ObservedObject var task: Task
     
@@ -32,7 +32,8 @@ struct TaskCell: View {
                     task.completed.toggle()
                 }
         
-            Text(task.description)
+            Text("\(task.description) +\(task.goalValue.rawValue)")
+
         }
         .foregroundColor(self.taskColor)
     }

@@ -19,6 +19,7 @@ struct EarnPoints: View {
     var body: some View {
         List(store.tasks) { task in
             TaskCell(task: task)
+            Text("total points \(store.totalScore)")
         }
         .navigationTitle("Reminders")
         .toolbar {

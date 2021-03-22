@@ -13,19 +13,22 @@ class Task: Identifiable, ObservableObject {
     var goalName: String
     var description: String
     var priority: TaskPriority
+    var goalValue: GoalValue
+    
     @Published var completed: Bool
     
-    internal init(id: UUID = UUID(), goalName: String, description: String, priority: TaskPriority, completed: Bool) {
+    internal init(id: UUID = UUID(), goalName: String, description: String, goalValue: GoalValue, priority: TaskPriority, completed: Bool) {
         self.id = id
         self.goalName = goalName
         self.description = description
+        self.goalValue = goalValue
         self.priority = priority
         self.completed = completed
     }
 }
 
 let testData = [
-    Task(goalName: "Homework", description: "Do homwork", priority: .high, completed: true),
-    Task(goalName: "First Aid", description: "Finish First Aid", priority: .medium, completed: false),
-    Task(goalName: "WO", description: "Workout", priority: .low, completed: false),
+    Task(goalName: "Homework", description: "Do homwork", goalValue: .three, priority: .high, completed: true),
+    Task(goalName: "First Aid", description: "Finish First Aid", goalValue: .four, priority: .medium, completed: true),
+    Task(goalName: "WO", description: "Workout", goalValue: .one, priority: .low, completed: false),
 ]
