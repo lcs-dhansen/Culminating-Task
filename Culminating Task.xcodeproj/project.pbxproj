@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F18CCF426012F6E008501B5 /* addGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F18CCF326012F6E008501B5 /* addGoals.swift */; };
 		0F18CCF726012F8A008501B5 /* EarnPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F18CCF626012F8A008501B5 /* EarnPoints.swift */; };
 		0F1E567125F91736007B3AF3 /* Culminating_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1E567025F91736007B3AF3 /* Culminating_TaskApp.swift */; };
 		0F1E567325F91736007B3AF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1E567225F91736007B3AF3 /* ContentView.swift */; };
@@ -15,6 +14,7 @@
 		0F1E567825F9173A007B3AF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F1E567725F9173A007B3AF3 /* Preview Assets.xcassets */; };
 		0F1E568125F9179C007B3AF3 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1E568025F9179C007B3AF3 /* MainScreen.swift */; };
 		0F1E568625F9181A007B3AF3 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1E568525F9181A007B3AF3 /* HomeScreen.swift */; };
+		0F5A6CAC260A6C8E00E67C70 /* DeleteGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5A6CAB260A6C8E00E67C70 /* DeleteGoal.swift */; };
 		0F637EFB2608214600E7A732 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F637EFA2608214600E7A732 /* Task.swift */; };
 		0F637EFE2608215E00E7A732 /* TaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F637EFD2608215E00E7A732 /* TaskPriority.swift */; };
 		0F637F012608218500E7A732 /* GoalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F637F002608218500E7A732 /* GoalValue.swift */; };
@@ -25,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F18CCF326012F6E008501B5 /* addGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addGoals.swift; sourceTree = "<group>"; };
 		0F18CCF626012F8A008501B5 /* EarnPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarnPoints.swift; sourceTree = "<group>"; };
 		0F1E566D25F91736007B3AF3 /* Culminating Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Culminating Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1E567025F91736007B3AF3 /* Culminating_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Culminating_TaskApp.swift; sourceTree = "<group>"; };
@@ -35,6 +34,7 @@
 		0F1E567925F9173A007B3AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F1E568025F9179C007B3AF3 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		0F1E568525F9181A007B3AF3 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		0F5A6CAB260A6C8E00E67C70 /* DeleteGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteGoal.swift; sourceTree = "<group>"; };
 		0F637EFA2608214600E7A732 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		0F637EFD2608215E00E7A732 /* TaskPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPriority.swift; sourceTree = "<group>"; };
 		0F637F002608218500E7A732 /* GoalValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalValue.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 				0F69DCEA25FA64D70095E345 /* Motivation.swift */,
 				0F637F0F2608226400E7A732 /* TaskCell.swift */,
 				0F637F122608227B00E7A732 /* AddTask.swift */,
-				0F18CCF326012F6E008501B5 /* addGoals.swift */,
+				0F5A6CAB260A6C8E00E67C70 /* DeleteGoal.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,10 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F637EFE2608215E00E7A732 /* TaskPriority.swift in Sources */,
-				0F18CCF426012F6E008501B5 /* addGoals.swift in Sources */,
 				0F637F0C260821F800E7A732 /* TaskStore.swift in Sources */,
 				0F1E568625F9181A007B3AF3 /* HomeScreen.swift in Sources */,
 				0F637F012608218500E7A732 /* GoalValue.swift in Sources */,
+				0F5A6CAC260A6C8E00E67C70 /* DeleteGoal.swift in Sources */,
 				0F1E568125F9179C007B3AF3 /* MainScreen.swift in Sources */,
 				0F18CCF726012F8A008501B5 /* EarnPoints.swift in Sources */,
 				0F1E567325F91736007B3AF3 /* ContentView.swift in Sources */,

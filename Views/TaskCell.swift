@@ -11,6 +11,7 @@ struct TaskCell: View {
     
     var points = 0
     var taskCompleted = false
+    var taskDeleted = false
     
     @ObservedObject var task: Task
     
@@ -31,7 +32,7 @@ struct TaskCell: View {
                 .onTapGesture {
                     task.completed.toggle()
                 }
-        
+            
             Text("\(task.description) +\(task.goalValue.rawValue)")
 
         }

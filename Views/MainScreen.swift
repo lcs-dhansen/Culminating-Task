@@ -11,6 +11,7 @@ import SwiftUI
 struct MainScreen: View {
     
     
+    
     // create a copy of the data that we created in Thing.swift
     // A "store" in developer speak is just "a place that we keep data"
   //  var store = boomerMemorial
@@ -35,7 +36,7 @@ struct MainScreen: View {
                         
 //                    NavigationLink("Add Goals", destination: AddTask(store: testStore, showing: .constant(true)))
                     
-                    NavigationLink("Home Screen", destination: HomeScreen())
+                    NavigationLink("Home Screen", destination: HomeScreen(store: testStore))
                         
                 }
                 .frame(width: 300, height: 700)

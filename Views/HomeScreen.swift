@@ -9,15 +9,15 @@ import SwiftUI
 
 struct HomeScreen: View {
     
-    
+    @ObservedObject var store: TaskStore
     
     var body: some View {
-        Text("\(score)/100")
+        Text("\(store.totalScore)/100")
     }
 }
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen()
+        HomeScreen(store: testStore)
     }
 }

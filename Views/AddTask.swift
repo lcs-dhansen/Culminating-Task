@@ -77,7 +77,7 @@ struct AddTask: View {
         //add the task to the list of tasks
         store.tasks.append(Task(goalName: goalName, description: description,
                                 goalValue: goalValue, priority: priority,
-                                completed: false))
+                                completed: false, deleted: false))
         
         //dismiss this view
         showing = false
