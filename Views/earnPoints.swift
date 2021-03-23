@@ -15,19 +15,26 @@ struct EarnPoints: View {
     
     //controls wether the add task view is showing
     @State private var showingAddTask = false
+    @State private var showingDeleteGoal = false
     
+//    func deleteItems(at offsets: IndexSet) {
+//        tasks.items.remove(atOffsets: offsets)
+//    }
+
     var body: some View {
         List(store.tasks) { task in
             TaskCell(task: task)
-            Text("total points \(store.totalScore)")
+//            Text("total points \(store.totalScore)")
         }
         .navigationTitle("Reminders")
+//        .onDelete(perform: deleteItems)
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button("Add") {
                     showingAddTask = true
                 }
             }
+        
         }
         .sheet(isPresented: $showingAddTask, content: {
             AddTask(store: store, showing: $showingAddTask)

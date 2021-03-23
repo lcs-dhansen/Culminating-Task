@@ -11,7 +11,6 @@ struct TaskCell: View {
     
     var points = 0
     var taskCompleted = false
-    var taskDeleted = false
     
     @ObservedObject var task: Task
     
